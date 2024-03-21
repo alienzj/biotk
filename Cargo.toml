@@ -1,8 +1,11 @@
 [package]
 name = "biotk"
+authors = ["alienzj <alienchuj@gmail.com>", "Mistral-7B-Instruct-v0.2"]
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+bio = "1.5.0"
+itertools = "0.12.1"

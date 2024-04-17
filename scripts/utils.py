@@ -103,4 +103,6 @@ def convert_blast_json_to_dataframe(json_file):
                 blast_dict["hits_hsps_midline"].append(hits["hsps"][0]["midline"])
                 
     blast_df = pd.DataFrame(blast_dict)
+    blast_df["hits_hsps_percent_identity"] = blast_df["hits_hsps_identity"] / blast_df["hits_hsps_align_len"]
+
     return blast_df
